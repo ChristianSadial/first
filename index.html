@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GadgetSpher | Online Shopping</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="#home" class="logo">Gadget<span>Spher</span></a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="cart-button" id="cartButton">
+            🛒 Cart <span id="cartCount">0</span>
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">YOUR EVERYDAY TECH STORE</p>
+            <h1>Upgrade Your Life<br>With Better Gadgets.</h1>
+            <p>
+                Discover amazing gadgets, accessories, and everyday
+                essentials at prices you'll love.
+            </p>
+            <a href="#products" class="primary-button">Shop Now →</a>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=900&q=85"
+                alt="Modern electronic gadgets">
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits">
+        <div>🚚 <strong>Fast Delivery</strong><small>Convenient shopping</small></div>
+        <div>🔒 <strong>Secure Shopping</strong><small>Shop with confidence</small></div>
+        <div>⭐ <strong>Quality Products</strong><small>Selected essentials</small></div>
+        <div>💬 <strong>Customer Support</strong><small>We're here to help</small></div>
+    </section>
+
+    <!-- Products -->
+    <main class="products-section" id="products">
+        <div class="section-heading">
+            <p class="eyebrow">OUR COLLECTION</p>
+            <h2>Explore Our Products</h2>
+            <p>Find your next favorite item.</p>
+        </div>
+
+        <div class="shop-tools">
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search products..."
+                aria-label="Search products">
+
+            <select id="categoryFilter" aria-label="Filter by category">
+                <option value="all">All Categories</option>
+                <option value="Phones">Phones</option>
+                <option value="Accessories">Accessories</option>
+                <option value="Audio">Audio</option>
+                <option value="Computers">Computers</option>
+            </select>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+
+            <article class="product-card"
+                data-name="Smartphone X" data-category="Phones">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80"
+                         alt="Smartphone">
+                    <span class="product-tag">Popular</span>
+                </div>
+                <div class="product-info">
+                    <p class="category">Phones</p>
+                    <h3>Smartphone X</h3>
+                    <p class="rating">★★★★★ <span>(4.9)</span></p>
+                    <div class="product-bottom">
+                        <strong>₱12,999</strong>
+                        <button class="add-button" data-id="1">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card"
+                data-name="Wireless Headphones" data-category="Audio">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80"
+                         alt="Wireless headphones">
+                    <span class="product-tag">Best Seller</span>
+                </div>
+                <div class="product-info">
+                    <p class="category">Audio</p>
+                    <h3>Wireless Headphones</h3>
+                    <p class="rating">★★★★★ <span>(4.8)</span></p>
+                    <div class="product-bottom">
+                        <strong>₱1,899</strong>
+                        <button class="add-button" data-id="2">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card"
+                data-name="Smart Watch" data-category="Accessories">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80"
+                         alt="Smart watch">
+                </div>
+                <div class="product-info">
+                    <p class="category">Accessories</p>
+                    <h3>Smart Watch</h3>
+                    <p class="rating">★★★★★ <span>(4.7)</span></p>
+                    <div class="product-bottom">
+                        <strong>₱2,499</strong>
+                        <button class="add-button" data-id="3">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card"
+                data-name="Laptop Pro" data-category="Computers">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=600&q=80"
+                         alt="Laptop computer">
+                </div>
+                <div class="product-info">
+                    <p class="category">Computers</p>
+                    <h3>Laptop Pro</h3>
+                    <p class="rating">★★★★★ <span>(4.9)</span></p>
+                    <div class="product-bottom">
+                        <strong>₱29,999</strong>
+                        <button class="add-button" data-id="4">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card"
+                data-name="Bluetooth Speaker" data-category="Audio">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=600&q=80"
+                         alt="Bluetooth speaker">
+                </div>
+                <div class="product-info">
+                    <p class="category">Audio</p>
+                    <h3>Bluetooth Speaker</h3>
+                    <p class="rating">★★★★☆ <span>(4.6)</span></p>
+                    <div class="product-bottom">
+                        <strong>₱1,299</strong>
+                        <button class="add-button" data-id="5">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card"
+                data-name="Wireless Earbuds" data-category="Accessories">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=600&q=80"
+                         alt="Wireless earbuds">
+                </div>
+                <div class="product-info">
+                    <p class="category">Accessories</p>
+                    <h3>Wireless Earbuds</h3>
+                    <p class="rating">★★★★★ <span>(4.8)</span></p>
+                    <div class="product-bottom">
+                        <strong>₱999</strong>
+                        <button class="add-button" data-id="6">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <p id="emptyMessage" class="empty-message" hidden>
+            No products found. Try another search.
+        </p>
+    </main>
+
+    <!-- Shopping Cart -->
+    <section class="cart-section" id="cart">
+        <div class="cart-heading">
+            <h2>🛒 Your Shopping Cart</h2>
+            <button id="clearCart" class="text-button">Clear Cart</button>
+        </div>
+
+        <div id="cartItems">
+            <p class="empty-cart">Your cart is empty. Start shopping!</p>
+        </div>
+
+        <div class="cart-summary">
+            <p>Total: <strong id="cartTotal">₱0</strong></p>
+            <button id="checkoutButton" class="primary-button">
+                Proceed to Checkout
+            </button>
+        </div>
+
+        <p class="cart-note">
+            Demo checkout only. No real payment is processed.
+        </p>
+    </section>
+
+    <!-- About -->
+    <section class="about-section" id="about">
+        <div>
+            <p class="eyebrow">ABOUT OUR STORE</p>
+            <h2>Technology Made Simple.</h2>
+            <p>
+                GadgetSpher is a sample online shopping website designed
+                to make discovering everyday technology simple and convenient.
+                Browse products, add items to your cart, and review your order.
+            </p>
+            <a href="#products" class="primary-button">Explore Products</a>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter" id="contact">
+        <h2>Stay Connected</h2>
+        <p>Subscribe to our demo newsletter for store updates.</p>
+
+        <form id="newsletterForm">
+            <input type="email" id="emailInput"
+                   placeholder="Enter your email address" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        <p id="newsletterMessage" aria-live="polite"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#home" class="logo">Gadget<span>Spher</span></a>
+        <p>© 2026 GadgetSpher. Educational demo website.</p>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </footer>
+
+</body>
+</html>
